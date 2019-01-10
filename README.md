@@ -51,4 +51,12 @@ There is always a chance the Speaker, who is randomly selected from the Delegate
 Dishonest Delegate
 In this case, the chosen Speaker is honest but there are Dishonest Delegates in the system meaning even if they receive a proposal for new block that is faulty, they can say it is valid. If it is a minority of delegates that are dishonest, the block will not make it and new speaker is elected.
 
+## Wallets
+Blockchain identities are made up of a few important tools like wallets, addresses, and keys. Not only are there a few of these different tools creating our identity, it's also possible to implement them in different ways.
 
+### Key Terms
+Non-deterministic Wallet: (random wallets) A wallet where private keys are generated from random numbers.
+
+Deterministic Wallet: A wallet where addresses, private keys, and public keys can be traced back to their original seed words.
+
+Hierarchical Deterministic Wallet: An advanced type of deterministic wallet that contains keys derived in a tree structure.
