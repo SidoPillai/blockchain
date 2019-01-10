@@ -29,3 +29,8 @@ Potential Issues
 Extremely High-Energy Consumption
 A Monopoly of Miners which Leads to a Concern for System Centralizations
 
+### Proof of Stake
+In the Proof-of-Stake Consensus Protocol, there are no more miners; instead, there are Validators. These validators, or stakeholders, determine which block makes it onto the blockchain. In order to validate transactions and create blocks, validators put up their own coins as “stake”. Think of it as placing a bet - if they validate a fraudulent transaction, they lose their holdings as well as their rights to participate as a validator in the future. In theory, this check incentivizes the system to validate only truthful transactions.
+
+Potential Issues
+We discussed the “Nothing At Stake” problem in which a bad acting Validator places bets on multiple forks so they theoretically always win out in the end.
