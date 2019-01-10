@@ -38,3 +38,17 @@ We discussed the “Nothing At Stake” problem in which a bad acting Validator 
 Proposed Solutions
 - Slasher Strategy - which entails penalizing validators if they simultaneously create blocks on multiple chains.
 - Punisher Strategy - which simply punishes validators for creating blocks on the wrong chain. In this method, Validators will be motivated to be selective and conscious about the blockchain in which they put their stake.
+
+### Delegated Byzantine Fault Tolerance (dBFT)
+dBFT uses a system similar to a democracy where Ordinary Nodes the system vote on representative Delegate Nodes to decide which blocks should be added to the blockchain. When it’s time to add a block, a Speaker is randomly assigned from the group of Delegates to create a new block and propose the new block. 66.66% of delegates need to approve on the block for it to pass.
+
+Potential Issues
+Two issues we explored were the case of the Dishonest Speaker and the Dishonest Delegate.
+
+Dishonest Speaker
+There is always a chance the Speaker, who is randomly selected from the Delegates, could be dishonest or malfunction. In this situation, the network needs to rely on honest delegates to vote the proposed block down so it doesn’t reach 66% approval. It is up to users of protocol who vote on Delegates, to find out which delegates are not trustworthy and vote on other delegates that are truthful.
+
+Dishonest Delegate
+In this case, the chosen Speaker is honest but there are Dishonest Delegates in the system meaning even if they receive a proposal for new block that is faulty, they can say it is valid. If it is a minority of delegates that are dishonest, the block will not make it and new speaker is elected.
+
+
