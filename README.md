@@ -13,6 +13,8 @@ Trying out some blockchain stuff
 6. Architecture
 7. Supply Chain
 
+## Consensus Algorithms
+
 ### Proof of Work (PoW)
 Bitcoin figured out how to use the Proof of Work algorithm to solve this issue.
 
