@@ -13,7 +13,7 @@ Trying out some blockchain stuff
 6. Architecture
 7. Supply Chain
 
-###Proof of Work (PoW)
+### Proof of Work (PoW)
 Bitcoin figured out how to use the Proof of Work algorithm to solve this issue.
 
 The main innovation that Satoshi Nakamoto introduced in Bitcoin’s white paper is using Proof of Work (PoW) to achieve consensus without a central authority and solve the double-spend problem.
