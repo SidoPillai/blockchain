@@ -34,3 +34,7 @@ In the Proof-of-Stake Consensus Protocol, there are no more miners; instead, the
 
 Potential Issues
 We discussed the “Nothing At Stake” problem in which a bad acting Validator places bets on multiple forks so they theoretically always win out in the end.
+
+Proposed Solutions
+- Slasher Strategy which entails penalizing validators if they simultaneously create blocks on multiple chains.
+- Punisher Strategy which simply punishes validators for creating blocks on the wrong chain. In this method, Validators will be motivated to be selective and conscious about the blockchain in which they put their stake.
