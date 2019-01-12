@@ -11,6 +11,7 @@ Trying out some blockchain stuff
 - Importing bitcoins via private keys - https://bitcoinelectrum.com/importing-your-private-keys-into-electrum/
 - Generate your own address - https://bitaddress.org
 - Bitoin Developer Glossary - https://bitcoin.org/en/developer-glossary#a
+- BIPS = https://github.com/bitcoin/bips
 
 ## Future Projects
 1. Blockchain Identity
