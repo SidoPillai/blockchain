@@ -84,7 +84,7 @@ A number to identify where it is located in the chain. 1st block in the chain is
 A hash representation of the data. SHA 256 is used to produce the hash.
 3. Number Of Transactions
 4. Height :
-Represents the height of the block. The first block of its type in the chain is also known as the coinbase. 
+The number of blocks preceding a particular block on a block chain. For example, the genesis block has a height of zero because zero block preceded it.
 5. Timestamp
 6. Merkle Root :
 Hash that represents every transaction in the block. This is also used in reverse to reconstruct the netire transaction data.
