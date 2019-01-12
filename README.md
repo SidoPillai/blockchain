@@ -83,7 +83,7 @@ A number to identify where it is located in the chain. 1st block in the chain is
 A hash representation of the data. SHA 256 is used to produce the hash.
 3. Number Of Transactions
 4. Height :
-Represents the height. The first block of its type in the chain is also known as the coinbase. 
+Represents the height of the block. The first block of its type in the chain is also known as the coinbase. 
 5. Timestamp
 6. Merkle Root :
 Hash that represents every transaction in the block. This is also used in reverse to reconstruct the netire transaction data.
@@ -101,6 +101,16 @@ An arbitrary number that can be used once to find the hash
 To identify what comes after the current block
 
 ### Transaction Data
+Transaction data is made up of the following:
+1. Hash
+2. Size
+3. Received Time
+4. Mined Time	
+5. Included in Block
+6. LockTime
+7. Coinbase
+8. Transaction Fee for miners 
+9. Amount returned back to sender
 
 To see what a block is made up of visit https://blockexplorer.com/ and enter 520607 in the search and see for yourself.
 
