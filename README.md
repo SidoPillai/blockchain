@@ -9,6 +9,7 @@ Trying out some blockchain stuff
 - Bitcoin Stats - https://bitcoinvisuals.com/stats
 - Importing bitcoins via private keys - https://bitcoinelectrum.com/importing-your-private-keys-into-electrum/
 - Generate your own address - https://bitaddress.org
+- Learn more - https://bitcoin.org/en/developer-glossary#a
 
 ## Future Projects
 1. Blockchain Identity
