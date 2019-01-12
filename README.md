@@ -109,7 +109,8 @@ Transaction data is made up of the following:
 5. Included in Block
 6. LockTime
 7. Coinbase
-8. Transaction Fee for miners 
+8. Amount send :
+Usually the money sent + miner's transaction fee
 9. Amount returned back to sender
 
 To see what a block is made up of visit https://blockexplorer.com/ and enter 520607 in the search and see for yourself.
