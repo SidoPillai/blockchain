@@ -70,6 +70,40 @@ In this case, the chosen Speaker is honest but there are Dishonest Delegates in 
 ## Wallets
 Blockchain identities are made up of a few important tools like wallets, addresses, and keys. Not only are there a few of these different tools creating our identity, it's also possible to implement them in different ways.
 
+## Block
+A typical Block is comprised of 2 things:
+1. Block Header
+2. Transaction data
+
+### Block Header
+Block header is composed of the following things:
+1. Block Number
+A number to identify where it is located in the chain. 1st block in the chain is also known as genesis block
+2. Block Hash
+A hash representation of the data. SHA 256 is used to produce the hash.
+3. Number Of Transactions
+4. Height
+Represents the height. The first block of its type in the chain is also known as the coinbase. 
+5. Timestamp
+6. Merkle Root
+Hash that represents every transaction in the block. This is also used in reverse to reconstruct the netire transaction data.
+7. Previous Block
+To identify what comes before the current block.
+8. Difficulty
+It is defined by number of zeros in the hash value. More zero's means more difficulty.
+9. Bits
+10. Size (bytes)
+Amount of space the block has to hold the data. Also remember, the size of all the block remains the same for every block in a given blockchain.
+11. Nonce
+An arbitrary number that can be used once to find the hash
+12. Version
+13. Next Block
+To identify what comes after
+
+### Transaction Data
+
+To see what a block is made up of visit https://blockexplorer.com/ and enter 520607 in the search and see for yourself.
+
 ### Key Terms
 Non-deterministic Wallet: (random wallets) A wallet where private keys are generated from random numbers.
 
