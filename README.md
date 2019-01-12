@@ -122,6 +122,18 @@ Usually the money sent + miner's transaction fee
 To see what a block is made up of visit https://blockexplorer.com/ and enter 520607 in the search and see for yourself.
 
 ## Bitcoin and Bitcoin core
+Main distinctions are Bitcoin as a network and Bitcoin as a software.
+
 - Bitcoin: Network of bitcoin users creating and validating transactions
 - Bitcoin Core: Implementation of bitcoin that encompasses all of the software behind bitcoin
 - Debug Console: Tool that allows you to interact with data on the bitcoin blockchain
+
+### Bitcoin Core
+1. Connect to the Network
+2. Validate the blockchain
+3. Send and Receive bitcoins
+
+#### Bitcoin Core Networks
+1. Bitcoin Mainnet: Primary Network where live transactions take place
+2. Bitcoin Testnet: Alternative Bitcoin blockchain that provides a test environment for applications
+3. Bitcoin Regnet: Alternative test network for testing bitcoin applications
