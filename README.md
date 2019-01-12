@@ -77,28 +77,28 @@ A typical Block is comprised of 2 things:
 
 ### Block Header
 Block header is composed of the following things:
-1. Block Number
+1. Block Number :
 A number to identify where it is located in the chain. 1st block in the chain is also known as genesis block
-2. Block Hash
+2. Block Hash :
 A hash representation of the data. SHA 256 is used to produce the hash.
 3. Number Of Transactions
-4. Height
+4. Height :
 Represents the height. The first block of its type in the chain is also known as the coinbase. 
 5. Timestamp
-6. Merkle Root
+6. Merkle Root :
 Hash that represents every transaction in the block. This is also used in reverse to reconstruct the netire transaction data.
-7. Previous Block
+7. Previous Block :
 To identify what comes before the current block.
-8. Difficulty
+8. Difficulty :
 It is defined by number of zeros in the hash value. More zero's means more difficulty.
 9. Bits
-10. Size (bytes)
+10. Size (bytes) :
 Amount of space the block has to hold the data. Also remember, the size of all the block remains the same for every block in a given blockchain.
-11. Nonce
+11. Nonce :
 An arbitrary number that can be used once to find the hash
-12. Version
-13. Next Block
-To identify what comes after
+12. Version 
+13. Next Block :
+To identify what comes after the current block
 
 ### Transaction Data
 
