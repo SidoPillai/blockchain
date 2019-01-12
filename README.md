@@ -74,7 +74,7 @@ Blockchain identities are made up of a few important tools like wallets, address
 
 1. Non-deterministic: (random wallets) A wallet where private keys are generated from random numbers.
 2. Sequentia deterministic: A wallet where addresses, private keys, and public keys can be traced back to their original seed words.
-3. Hierarchical deterministic
+3. Hierarchical Deterministic Wallet: An advanced type of deterministic wallet that contains keys derived in a tree structure.
 
 ## Block
 A typical Block is comprised of 2 things:
@@ -121,5 +121,7 @@ Usually the money sent + miner's transaction fee
 
 To see what a block is made up of visit https://blockexplorer.com/ and enter 520607 in the search and see for yourself.
 
-
-Hierarchical Deterministic Wallet: An advanced type of deterministic wallet that contains keys derived in a tree structure.
+## Bitcoin and Bitcoin core
+- Bitcoin: Network of bitcoin users creating and validating transactions
+- Bitcoin Core: Implementation of bitcoin that encompasses all of the software behind bitcoin
+- Debug Console: Tool that allows you to interact with data on the bitcoin blockchain
