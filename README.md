@@ -6,8 +6,8 @@ Trying out some blockchain stuff
 3. Bitcoin Message - https://github.com/siddeshpillai/blockchain/tree/bitcoin-message
 
 # Resources
-Bitcoin Stats - https://bitcoinvisuals.com/stats
-Importing bitcoins via private keys - https://bitcoinelectrum.com/importing-your-private-keys-into-electrum/
+- Bitcoin Stats - https://bitcoinvisuals.com/stats
+- Importing bitcoins via private keys - https://bitcoinelectrum.com/importing-your-private-keys-into-electrum/
 
 ## Future Projects
 1. Blockchain Identity
