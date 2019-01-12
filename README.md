@@ -4,6 +4,7 @@ Trying out some blockchain stuff
 1. Hashing Exercise - https://github.com/siddeshpillai/blockchain/tree/hashing-exercise
 2. Block Exercise - https://github.com/siddeshpillai/blockchain/tree/block-exercise
 3. Bitcoin Message - https://github.com/siddeshpillai/blockchain/tree/bitcoin-message
+4. Block Explorer - https://github.com/siddeshpillai/blockchain/tree/block-explorer
 
 # Resources
 - Bitcoin Stats - https://bitcoinvisuals.com/stats
