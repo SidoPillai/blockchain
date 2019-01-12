@@ -137,3 +137,9 @@ Main distinctions are Bitcoin as a network and Bitcoin as a software.
 1. Bitcoin Mainnet: Primary Network where live transactions take place
 2. Bitcoin Testnet: Alternative Bitcoin blockchain that provides a test environment for applications
 3. Bitcoin Regnet: Alternative test network for testing bitcoin applications
+
+|   |  Mainnet | Testnet | Regnet |
+|---|---|---|---|
+| Purpose  | Live  | Testing  | Testing  |
+| Coins  | Value  | No Value  | No Value  |
+| Peers   | Yes | Yes | Yes |
