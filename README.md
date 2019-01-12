@@ -144,7 +144,7 @@ Main distinctions are Bitcoin as a network and Bitcoin as a software.
 | Coins  | Value  | No Value  | No Value  |
 | Peers   | Yes | Yes | Yes |
 
-
+More focussed comparison
 |   | Mainnet | Testnet |
 |---|:---:|:---:|
 | Purpose | Production | Testing |
