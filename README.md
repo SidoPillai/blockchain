@@ -72,6 +72,10 @@ In this case, the chosen Speaker is honest but there are Dishonest Delegates in 
 ## Wallets
 Blockchain identities are made up of a few important tools like wallets, addresses, and keys. Not only are there a few of these different tools creating our identity, it's also possible to implement them in different ways.
 
+1. Non-deterministic: (random wallets) A wallet where private keys are generated from random numbers.
+2. Sequentia deterministic: A wallet where addresses, private keys, and public keys can be traced back to their original seed words.
+3. Hierarchical deterministic
+
 ## Block
 A typical Block is comprised of 2 things:
 1. Block Header
@@ -117,9 +121,5 @@ Usually the money sent + miner's transaction fee
 
 To see what a block is made up of visit https://blockexplorer.com/ and enter 520607 in the search and see for yourself.
 
-### Key Terms
-Non-deterministic Wallet: (random wallets) A wallet where private keys are generated from random numbers.
-
-Deterministic Wallet: A wallet where addresses, private keys, and public keys can be traced back to their original seed words.
 
 Hierarchical Deterministic Wallet: An advanced type of deterministic wallet that contains keys derived in a tree structure.
