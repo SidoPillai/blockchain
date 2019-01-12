@@ -38,6 +38,14 @@ We discussed the “Nothing At Stake” problem in which a bad acting Validator 
 
 One issue that can arise is the "nothing-at-stake" problem, wherein block generators have nothing to lose by voting for multiple blockchain histories, thereby preventing consensus from being achieved. Because unlike in proof-of-work systems, there is little cost to working on several chains.
 
+Many have attempted to solve these problems:
+
+1. Peercoin is the first cryptocurrency that applied the concept of PoS. In its early stages, it used centrally broadcast checkpoints signed under the developer's private key. No blockchain reorganization was allowed deeper than the last known checkpoints. Checkpoints are opt-in as of v0.6 and are not enforced now that the network has reached a suitable level of distribution.
+2. Ethereum's suggested Slasher protocol allows users to "punish" the cheater who forges on top of more than one blockchain branch. This proposal assumes that one must double-sign to create a fork and that one can be punished for creating a fork while not having stake. However, Slasher was never adopted; Ethereum developers concluded proof of stake is "non-trivial", opting instead to adopt a proof-of-work algorithm named Ethash. It is planned to be replaced by a different PoS protocol called "Casper".
+3. Nxt's protocol only allows reorganization of the last 720 blocks. However, this merely rescales the problem: a client may follow a fork of 721 blocks, regardless of whether it is the tallest blockchain, thereby preventing consensus.
+4. Hybrid "proof of burn" and proof of stake. Proof-of-burn blocks act as checkpoints, have higher rewards, contain no transactions, are more secure, and anchor both to each other and to the PoS chain but are more expensive.
+5. Decred's hybrid proof-of-work and proof-of-stake, in which proof of stake is an extension dependent on the proof-of-work timestamping, based on the "proof of activity" proposal, which aims to solve the nothing-at-stake problem by having proof-of-work miners mining blocks and proof-of-stake acting as a second authentication mechanism.
+
 Proposed Solutions
 - Slasher Strategy - which entails penalizing validators if they simultaneously create blocks on multiple chains.
 - Punisher Strategy - which simply punishes validators for creating blocks on the wrong chain. In this method, Validators will be motivated to be selective and conscious about the blockchain in which they put their stake.
