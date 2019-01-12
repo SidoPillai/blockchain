@@ -147,13 +147,13 @@ Main distinctions are Bitcoin as a network and Bitcoin as a software.
 
 More focussed comparison
 
-|   | Mainnet | Testnet |
-|---|:---:|:---:|
-| Purpose | Production | Testing |
-| Environment | Public | Private |
-| Peers  | Entire Network | Testers |
-| Size  | ~200 GB | ~14 GB  |
-| Block Creation  | 10 minutes | 10 minutes |
-| Value | Full Value | No Value |
-| Public key prefix  | 1  | m or n |
-| Block difficuly  | Full | Half of mainnet  |
+|   | Mainnet | Testnet | Regnet |
+|---|:---:|:---:| :-----:|
+| Purpose | Production | Testing | Testing |
+| Environment | Public | Public | Private |
+| Peers  | Entire Network | Testers | None |
+| Size  | ~200 GB | ~14 GB  | ~0 GB |
+| Block Creation  | 10 minutes | 10 minutes | Instantly |
+| Value | Full Value | No Value | No Value |
+| Public key prefix  | 1  | m or n | m or n |
+| Block difficuly  | Full | Half of mainnet | None |
