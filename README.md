@@ -157,3 +157,23 @@ More focussed comparison
 | Value | Full Value | No Value | No Value |
 | Public key prefix  | 1  | m or n | m or n |
 | Block difficuly  | Full | Half of mainnet | None |
+
+## Setting up Bitcoin Core
+You need to have atleat 200 GB of storage if you want to install the entire bitcoin transaction data. 
+Alternatively, you can also configure the bitcoin core as a testnet which requires only 20 GB of storage space. 
+
+If you do this, rather than the software syncing to the mainnet, which can be up to 200GB or more, you’ll sync to the testnet which is approximately 15GB, or the regnet which is 0GB.
+
+### Reduce Storage
+It is possible to configure your node to to run in pruned mode in order to reduce storage requirements. This can reduce the disk usage from over 200GB to around 5GB.
+
+Running a node in pruned mode is incompatible with -txindex and -rescan. It also disables the RPC importwallet. Two RPCs that are available and potentially helpful, however, are importprunedfunds and removeprunedfunds.
+
+To enable block pruning set prune=N on the command line or in bitcoin.conf, where N is the number of MiB to allot for raw block and undo data.
+
+A value of 0 disables pruning. The minimal value above 0 is 550. Your wallet is as secure with high values as it is with low ones. Higher values merely ensure that your node will not shut down upon blockchain reorganizations of more than 2 days - which are unlikely to happen in practice. In future releases, a higher value may also help the network as a whole because stored blocks could be served to other nodes.
+
+As a quick summary here are the steps you’ll go through.
+
+Step 1: create a bitcoin.conf file in your bitcoin installation directory.
+Step 2: In this file, write prune=550.
