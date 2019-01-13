@@ -219,30 +219,30 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 2. getblockcount: Returns the number of blocks in the blockchain.
 3. verifychain: Verifies blockchain database.
 
-***Key Terms*** <br>
-***Block Chain:*** Digital ledger that contains the entire history of transactions made on the network.<br>
+**Key Terms** <br>
+**Block Chain:** Digital ledger that contains the entire history of transactions made on the network.<br>
 
 #### 2. Hash Commands
 1. getblockhash: Returns hash of a block at the block number provided
 2. getnetworkhashps: Returns an estimated network hashes per second based on a specified number of recent blocks.
 3. getbestblockhash: Returns the hash of the best block.
 
-***Key Terms:*** <br>
-***Hash Value:*** A digital fingerprint for information <br>
-***Best Block:*** Most recent block that you’ve synced to with your local copy of the blockchain. <br>
+**Key Terms:** <br>
+**Hash Value:** A digital fingerprint for information <br>
+**Best Block:** Most recent block that you’ve synced to with your local copy of the blockchain. <br>
 
 #### 3. Block Commands
 1. getblock: Returns details of block information.
 2. getblockheader: Returns information about the block header.
 3. generate: Immediately mines the specified number of blocks to an address in the wallet.
 
-***Key Terms*** <br>
-***Block:*** A container that holds a list of transactions to be added to the blockchain.
+**Key Terms** <br>
+**Block:** A container that holds a list of transactions to be added to the blockchain.
 
 #### 4. Wallet Commands
 1. getwalletinfo: Returns an object containing various information about a wallet’s state.
 2. listwallets: Returns a list of currently loaded wallets.
 3. walletpassphrasechange: Change the wallet passphrase.
 
-**Key Terms**
+**Key Terms** <br>
 **Wallet:** Software that stores private keys that give access to a bitcoin balance
