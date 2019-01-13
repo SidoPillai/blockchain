@@ -220,7 +220,7 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 3. verifychain: Verifies blockchain database.
 
 **Key Terms** <br>
-**Block Chain:** Digital ledger that contains the entire history of transactions made on the network.<br>
+**- Block Chain:** Digital ledger that contains the entire history of transactions made on the network.<br>
 
 #### 2. Hash Commands
 1. getblockhash: Returns hash of a block at the block number provided
@@ -228,8 +228,8 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 3. getbestblockhash: Returns the hash of the best block.
 
 **Key Terms:** <br>
-**Hash Value:** A digital fingerprint for information <br>
-**Best Block:** Most recent block that you’ve synced to with your local copy of the blockchain. <br>
+**- Hash Value:** A digital fingerprint for information <br>
+**- Best Block:** Most recent block that you’ve synced to with your local copy of the blockchain. <br>
 
 #### 3. Block Commands
 1. getblock: Returns details of block information.
@@ -237,7 +237,7 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 3. generate: Immediately mines the specified number of blocks to an address in the wallet.
 
 **Key Terms** <br>
-**Block:** A container that holds a list of transactions to be added to the blockchain.
+**- Block:** A container that holds a list of transactions to be added to the blockchain.
 
 #### 4. Wallet Commands
 1. getwalletinfo: Returns an object containing various information about a wallet’s state.
@@ -245,4 +245,12 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 3. walletpassphrasechange: Change the wallet passphrase.
 
 **Key Terms** <br>
-**Wallet:** Software that stores private keys that give access to a bitcoin balance
+**- Wallet:** Software that stores private keys that give access to a bitcoin balance
+
+#### 5. Mempool Commands
+1. getmempoolinfo: Returns details on the active state of the transaction memory pool.
+2. getrawmempool: Returns all transaction details in the memory pool.
+3. getmempoolentry: Returns mempool data for a given transaction.
+
+**Key Terms** <br>
+**- Mempool:** Waiting place for all unconfirmed transactions before they are added to the blockchain.
