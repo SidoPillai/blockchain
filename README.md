@@ -254,3 +254,11 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 
 **Key Terms:** <br>
 **- Mempool:** Waiting place for all unconfirmed transactions before they are added to the blockchain.
+
+#### 6. Transaction Commands
+1. getchaintxstats: Compute statistics about the total number and rate of transactions in the chain
+2. getrawtransaction: Returns raw transaction data
+3. listtransactions: Returns a list of transactions for a given account
+
+**Key Terms:** <br>
+**-Transaction:** Record of any movement of funds that takes place on the network.
