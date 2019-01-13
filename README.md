@@ -198,3 +198,15 @@ This is a powerful tool that helps you explore data within the bitcoin blockchai
 After setting up the bitcoin core you have 2 ways to navigate and interact via terminal.
 1. Via Client : Go to the help in the menu bar and open Debug Console. Enter help
 2. Via Cli : Go to terminal and type bitcoin-cli --help
+
+You notice several categories:
+
+- Blockchain
+- Control
+- Generating
+- Mining
+- Network
+- Rawtransactions
+- Util
+- Wallet
+- Zmq
