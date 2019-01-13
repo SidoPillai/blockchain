@@ -15,6 +15,8 @@ Trying out some blockchain stuff
 - Bitcoin book - https://github.com/bitcoinbook/bitcoinbook
 - Certifications- https://cryptoconsortium.org/certifications/CBP
 - Address - https://www.bitaddress.org
+- Hyperledger explorer - https://github.com/hyperledger/blockchain-explorer
+- Blockchain demo - https://github.com/anders94/blockchain-demo
 
 ## Future Projects
 1. Blockchain Identity
