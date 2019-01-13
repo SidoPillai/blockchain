@@ -215,23 +215,26 @@ For a list of available commands and their definitions, you can also go to the b
 https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 
 #### Block Chain Commands
-***1. getblockchaininfo:*** Returns various state information about blockchain processing.
-***2. getblockcount:*** Returns the number of blocks in the blockchain.
-***3. verifychain:*** Verifies blockchain database.
+1. getblockchaininfo: Returns various state information about blockchain processing.
+2. getblockcount: Returns the number of blocks in the blockchain.
+3. verifychain: Verifies blockchain database.
 
 ***Key Terms*** <br>
 ***Block Chain:*** Digital ledger that contains the entire history of transactions made on the network.<br>
 
 #### Hash Commands
-***1. getblockhash:*** Returns hash of a block at the block number provided
-***2. getnetworkhashps:*** Returns an estimated network hashes per second based on a specified number of recent blocks.
-***3. getbestblockhash:*** Returns the hash of the best block.
+1. getblockhash: Returns hash of a block at the block number provided
+2. getnetworkhashps: Returns an estimated network hashes per second based on a specified number of recent blocks.
+3. getbestblockhash: Returns the hash of the best block.
 
-**Key Terms:** <br>
-**Hash Value:** A digital fingerprint for information <br>
-**Best Block:** Most recent block that you’ve synced to with your local copy of the blockchain. <br>
+***Key Terms:*** <br>
+***Hash Value:*** A digital fingerprint for information <br>
+***Best Block:*** Most recent block that you’ve synced to with your local copy of the blockchain. <br>
 
 #### Block Commands
-***1. getblock:*** Returns details of block information.
-***2. getblockheader:*** Returns information about the block header.
-***3. generate:*** Immediately mines the specified number of blocks to an address in the wallet.
+1. getblock: Returns details of block information.
+2. getblockheader: Returns information about the block header.
+3. generate: Immediately mines the specified number of blocks to an address in the wallet.
+
+***Key Terms*** <br>
+***Block:*** A container that holds a list of transactions to be added to the blockchain.
