@@ -13,6 +13,7 @@ Trying out some blockchain stuff
 - Bitoin Developer Glossary - https://bitcoin.org/en/developer-glossary#a
 - BIPS = https://github.com/bitcoin/bips
 - Bitcoin book - https://github.com/bitcoinbook/bitcoinbook
+- Certifications- https://cryptoconsortium.org/certifications/CBP
 
 ## Future Projects
 1. Blockchain Identity
