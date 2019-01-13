@@ -12,6 +12,7 @@ Trying out some blockchain stuff
 - Generate your own address - https://bitaddress.org
 - Bitoin Developer Glossary - https://bitcoin.org/en/developer-glossary#a
 - BIPS = https://github.com/bitcoin/bips
+- Bitcoin book - https://github.com/bitcoinbook/bitcoinbook
 
 ## Future Projects
 1. Blockchain Identity
