@@ -6,6 +6,10 @@ Trying out some blockchain stuff
 3. Bitcoin Message - https://github.com/siddeshpillai/blockchain/tree/bitcoin-message
 4. Block Explorer - https://github.com/siddeshpillai/blockchain/tree/block-explorer
 
+# Research Papers
+1. How to timestamp digital document - https://www.anf.es/pdf/Haber_Stornetta.pdf
+2. Bitcoin: A peer to peer cash system - https://bitcoin.org/bitcoin.pdf 
+
 # Resources
 - Bitcoin Stats - https://bitcoinvisuals.com/stats
 - Importing bitcoins via private keys - https://bitcoinelectrum.com/importing-your-private-keys-into-electrum/
