@@ -14,6 +14,7 @@ Trying out some blockchain stuff
 - BIPS = https://github.com/bitcoin/bips
 - Bitcoin book - https://github.com/bitcoinbook/bitcoinbook
 - Certifications- https://cryptoconsortium.org/certifications/CBP
+- Address - https://www.bitaddress.org
 
 ## Future Projects
 1. Blockchain Identity
