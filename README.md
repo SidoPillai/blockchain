@@ -262,3 +262,13 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 
 **Key Terms:** <br>
 **- Transaction:** Record of any movement of funds that takes place on the network.
+
+#### 7. Signature Commands
+1. signrawtransaction: Sign inputs for a raw transaction.
+2. signmessage: Sign message with the private key of an address
+
+**Resources:** <br>
+Learn more about the [Raw transaction format](https://bitcoin.org/en/developer-reference#raw-transaction-format)
+
+**Key Terms:** <br>
+**- Signature:** Establishes proof of ownership for each transaction on the blockchain.
