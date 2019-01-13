@@ -22,6 +22,7 @@ Trying out some blockchain stuff
 - Address - https://www.bitaddress.org
 - Hyperledger explorer - https://github.com/hyperledger/blockchain-explorer
 - Blockchain demo - https://github.com/anders94/blockchain-demo
+- Bitcoin Testnet block explorer - https://live.blockcypher.com/btc-testnet/
 
 ## Future Projects
 1. Blockchain Identity
