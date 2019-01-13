@@ -213,3 +213,9 @@ You notice several categories:
 
 For a list of available commands and their definitions, you can also go to the bitcoin wiki
 https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
+
+#### Commands
+1. getblockchaininfo: Returns various state information about blockchain processing.
+2. getblockcount: Returns the number of blocks in the blockchain.
+3. verifychain: Verifies blockchain database.
+
