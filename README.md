@@ -219,10 +219,13 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 ***2. getblockcount:*** Returns the number of blocks in the blockchain.
 ***3. verifychain:*** Verifies blockchain database.
 
+***Key Terms*** <br>
+***Block Chain:*** Digital ledger that contains the entire history of transactions made on the network.<br>
+
 #### Hash Commands
-***1. getblockhash:** Returns hash of a block at the block number provided
-**2. getnetworkhashps:** Returns an estimated network hashes per second based on a specified number of recent blocks.
-**3. getbestblockhash:** Returns the hash of the best block.
+***1. getblockhash:*** Returns hash of a block at the block number provided
+***2. getnetworkhashps:*** Returns an estimated network hashes per second based on a specified number of recent blocks.
+***3. getbestblockhash:*** Returns the hash of the best block.
 
 **Key Terms:** <br>
 **Hash Value:** A digital fingerprint for information <br>
