@@ -261,4 +261,4 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 3. listtransactions: Returns a list of transactions for a given account
 
 **Key Terms:** <br>
-**-Transaction:** Record of any movement of funds that takes place on the network.
+**- Transaction:** Record of any movement of funds that takes place on the network.
