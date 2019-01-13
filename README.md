@@ -272,3 +272,22 @@ Learn more about the [Raw transaction format](https://bitcoin.org/en/developer-r
 
 **Key Terms:** <br>
 **- Signature:** Establishes proof of ownership for each transaction on the blockchain.
+
+```
+Changes in Bitcoin Core version v0.17.0.1
+signrawtransaction is deprecated and will be fully removed in v0.18. 
+To use signrawtransaction in v0.17, restart bitcoind with -deprecatedrpc=signrawtransaction.
+
+Projects should transition to using signrawtransactionwithkey and signrawtransactionwithwallet before upgrading to v0.18.
+
+Try those commands using the help command:
+
+help signrawtransactionwithkey
+Sign inputs for raw transaction (serialized, hex-encoded). 
+The second argument is an array of base58-encoded private keys that will be the only keys used to sign the transaction. 
+The third optional argument (may be null) is an array of previous transaction outputs that this transaction depends on but may not yet be in the block chain.
+
+help signrawtransactionwithwallet
+Sign inputs for raw transaction (serialized, hex-encoded). 
+The second optional argument (may be null) is an array of previous transaction outputs that this transaction depends on but may not yet be in the block chain
+```
