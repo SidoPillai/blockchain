@@ -236,7 +236,7 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 2. getblockheader: Returns information about the block header.
 3. generate: Immediately mines the specified number of blocks to an address in the wallet.
 
-**Key Terms** <br>
+**Key Terms:** <br>
 **- Block:** A container that holds a list of transactions to be added to the blockchain.
 
 #### 4. Wallet Commands
@@ -244,7 +244,7 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 2. listwallets: Returns a list of currently loaded wallets.
 3. walletpassphrasechange: Change the wallet passphrase.
 
-**Key Terms** <br>
+**Key Terms:** <br>
 **- Wallet:** Software that stores private keys that give access to a bitcoin balance
 
 #### 5. Mempool Commands
@@ -252,5 +252,5 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 2. getrawmempool: Returns all transaction details in the memory pool.
 3. getmempoolentry: Returns mempool data for a given transaction.
 
-**Key Terms** <br>
+**Key Terms:** <br>
 **- Mempool:** Waiting place for all unconfirmed transactions before they are added to the blockchain.
