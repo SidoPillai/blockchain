@@ -224,6 +224,6 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 2. getnetworkhashps: Returns an estimated network hashes per second based on a specified number of recent blocks.
 3. getbestblockhash: Returns the hash of the best block.
 
-Note:
-Hash Value: A digital fingerprint for information
-Best Block: Most recent block that you’ve synced to with your local copy of the blockchain.
+Note: <br>
+Hash Value: A digital fingerprint for information <br>
+Best Block: Most recent block that you’ve synced to with your local copy of the blockchain. <br>
