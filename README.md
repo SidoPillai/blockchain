@@ -291,3 +291,13 @@ help signrawtransactionwithwallet
 Sign inputs for raw transaction (serialized, hex-encoded). 
 The second optional argument (may be null) is an array of previous transaction outputs that this transaction depends on but may not yet be in the block chain
 ```
+
+#### 8. Network Commands
+1. getnetworkinfo: Returns information about the state of the peer-to-peer network.
+2. getpeerinfo: Returns data about each connection network node.
+3. getconnectioncount: Returns the number of connections to other nodes.
+
+**Key Terms:** <br>
+**- Peer-to-peer network:** A network of computers that allows information to be shared across users.
+
+#### 9. Mining Commands
