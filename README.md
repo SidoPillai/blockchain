@@ -219,7 +219,7 @@ https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
 2. getblockcount: Returns the number of blocks in the blockchain.
 3. verifychain: Verifies blockchain database.
 
-**Key Terms** <br>
+**Key Terms:** <br>
 **- Block Chain:** Digital ledger that contains the entire history of transactions made on the network.<br>
 
 #### 2. Hash Commands
