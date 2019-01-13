@@ -179,4 +179,4 @@ As a quick summary here are the steps you’ll go through.
 Some useful links
 1. https://en.bitcoin.it/wiki/Data_directory
 2. https://jlopp.github.io/bitcoin-core-config-generator/
-
+3. Parameters in bitcoin.conf - https://www.youtube.com/watch?v=W54aRszkEOI&t=32s
