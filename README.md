@@ -210,3 +210,6 @@ You notice several categories:
 - Util
 - Wallet
 - Zmq
+
+For a list of available commands and their definitions, you can also go to the bitcoin wiki
+https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list
