@@ -176,5 +176,7 @@ As a quick summary here are the steps you’ll go through.
 1. create a bitcoin.conf file in your bitcoin installation directory.
 2. In this file, write prune=550.
 
-Where is my data stored?
-https://en.bitcoin.it/wiki/Data_directory
+Some useful links
+1. https://en.bitcoin.it/wiki/Data_directory
+2. https://jlopp.github.io/bitcoin-core-config-generator/
+
