@@ -311,3 +311,21 @@ Transactions encode the transfer of value between participants in the system. In
 Inputs in one transaction are just the unspent outputs from another transaction. All inputs reference back to an output. Unspent Outputs is sometimes short-handed to UTXO.
 
 ## Transaction Data Model
+In a blockchain transaction are stored in double hashed form i.e. the initial raw information is put to SHA 256 twice.
+
+For e.g. SHA 256 ( SHA 256 (raw) ) => b138360800cdc72248c3ca8dfd06de85913d1aac7f41b4fa54eb1f5a4a379081
+
+Raw Transaction Data: (hex decimal format)
+0100000001f3f6a909f8521adb57d898d2985834e632374e770fd9e2b98656f1bf1fdfd427010000006b48304502203a776322ebf8eb8b58cc6ced4f2574f4c73aa664edce0b0022690f2f6f47c521022100b82353305988cb0ebd443089a173ceec93fe4dbfe98d74419ecc84a6a698e31d012103c5c1bc61f60ce3d6223a63cedbece03b12ef9f0068f2f3c4a7e7f06c523c3664ffffffff0260e31600000000001976a914977ae6e32349b99b72196cb62b5ef37329ed81b488ac063d1000000000001976a914f76bc4190f3d8e2315e5c11c59cfc8be9df747e388ac00000000
+
+It is structured into the following:
+1. Version - bitcoin version to identify which rules the transaction follows
+2. Input count - how many inputs were used for the transaction
+3. Input info - At a high level, it provides where the input is coming from and checks whether inputs can be used
+4. Output count - how many outputs were produced from the transaction
+5. Output info - At a high level, it provides how many BTC outputted and conditions for future spending.
+6. Locktime - Earliest time or an earliest block a transaction can be added to the blockchain. If < 500 million, read as block height else if > 500 million, read as Unix timestamp
+
+
+
+
