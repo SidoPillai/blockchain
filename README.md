@@ -348,7 +348,7 @@ Breakdown of Raw Transaction:
 ```decoderawtransaction - View raw hex string that encodes the transaction details we supplied```
 
 5. Sign the Raw Transaction <br>
-``` signrawtransactionwithwallet ```
+``` signrawtransactionwithwallet ``` <br>
 ``` signrawtransaction - older versions than 0.17```
 
 6. Submit the Raw Transaction to the Network <br>
