@@ -91,7 +91,7 @@ Blockchain identities are made up of a few important tools like wallets, address
 ## Block
 A typical Block is comprised of 2 things:
 1. Block Header
-2. Transaction data
+2. Body
 
 ### Block Header
 Block header is composed of the following things:
@@ -118,8 +118,8 @@ An arbitrary number that can be used once to find the hash
 13. Next Block :
 To identify what comes after the current block
 
-### Transaction Data
-Transaction data is made up of the following:
+### Body
+Body is made up of transaction data that comprises of the following:
 1. Hash
 2. Size
 3. Received Time
@@ -304,3 +304,10 @@ The second optional argument (may be null) is an array of previous transaction o
 1. getmininginfo: Returns an object that contains mining-related information.
 2. getblocktemplate: Returns data needed to construct a block.
 3. prioritisetransaction: Accepts the transaction into mined blocks at a higher or lower priority.
+
+## Transactions
+Transactions encode the transfer of value between participants in the system. In more detail, a transaction is a data structure that encodes a transfer of value from a source of funds called an “input” to a destination called an “output”.
+
+Inputs in one transaction are just the unspent outputs from another transaction. All inputs reference back to an output. Unspent Outputs is sometimes short-handed to UTXO.
+
+## Transaction Data Model
