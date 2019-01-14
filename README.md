@@ -335,25 +335,25 @@ Breakdown of Raw Transaction:
 6. Locktime - The locktime field indicates the earliest time or the earliest block a transaction can be added to the blockchain. If the locktime is non-zero and less than 500 million, it is interpreted as a block height and miners have to wait until that block height is reached before attempting to add it to a block. If the locktime is above 500 million, it is read as a UNIX timestamp which means the number of seconds since the date January 1st 1970. It is usually 0 which means confirm as soon as possible.
 
 ## Create a raw transaction
-1. View all unspent confirmed UTXO in the wallet
-listunspent - Show all the unspent confirmed outputs in our wallet)
+1. View all unspent confirmed UTXO in the wallet <br>
+```listunspent - Show all the unspent confirmed outputs in our wallet)```
 
-2. View Details about a Specific UTXO
-gettxout - Get the details of this unspent output above
+2. View Details about a Specific UTXO <br>
+```gettxout - Get the details of this unspent output above```
 
-3. Create a Raw Transaction
-createrawtransaction - Create a transaction
+3. Create a Raw Transaction <br>
+```createrawtransaction - Create a transaction```
 
-4. Decode the Raw Transaction (to double-check it went through correctly)
-decoderawtransaction - View raw hex string that encodes the transaction details we supplied
+4. Decode the Raw Transaction (to double-check it went through correctly) <br>
+```decoderawtransaction - View raw hex string that encodes the transaction details we supplied```
 
-5. Sign the Raw Transaction
-signrawtransactionwithwallet
-signrawtransaction - older versions than 0.17
+5. Sign the Raw Transaction <br>
+``` signrawtransactionwithwallet ```
+``` signrawtransaction - older versions than 0.17```
 
-6. Submit the Raw Transaction to the Network
-sendrawtransction - Takes the raw hex string produced by signrawtransaction and returns a transaction hash (txid) as it submits the transaction on the network.
+6. Submit the Raw Transaction to the Network <br>
+```sendrawtransction - Takes the raw hex string produced by signrawtransaction and returns a transaction hash (txid) as it submits the transaction on the network.```
 
-7. Query the TxID of the Transaction we sent
-gettransaction - Query the TxID and view details. Similar to online block explorer
+7. Query the TxID of the Transaction we sent <br>
+```gettransaction - Query the TxID and view details. Similar to online block explorer```
 
