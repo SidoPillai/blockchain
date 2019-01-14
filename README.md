@@ -318,14 +318,21 @@ For e.g. SHA 256 ( SHA 256 (raw) ) => b138360800cdc72248c3ca8dfd06de85913d1aac7f
 Raw Transaction Data: (hex decimal format)
 0100000001f3f6a909f8521adb57d898d2985834e632374e770fd9e2b98656f1bf1fdfd427010000006b48304502203a776322ebf8eb8b58cc6ced4f2574f4c73aa664edce0b0022690f2f6f47c521022100b82353305988cb0ebd443089a173ceec93fe4dbfe98d74419ecc84a6a698e31d012103c5c1bc61f60ce3d6223a63cedbece03b12ef9f0068f2f3c4a7e7f06c523c3664ffffffff0260e31600000000001976a914977ae6e32349b99b72196cb62b5ef37329ed81b488ac063d1000000000001976a914f76bc4190f3d8e2315e5c11c59cfc8be9df747e388ac00000000
 
-It is structured into the following:
-1. Version - bitcoin version to identify which rules the transaction follows
-2. Input count - how many inputs were used for the transaction
+Breakdown of Raw Transaction:
+1. Version - All transactions include information about the Bitcoin Version number so we know which rules this transaction follows.
+2. Input count - Which is how many inputs were used for this transaction
 3. Input info - At a high level, it provides where the input is coming from and checks whether inputs can be used
-4. Output count - how many outputs were produced from the transaction
+- Previous output hash - All inputs reference back to an output (UTXO). This points back to the transaction containing the UTXO that will be spent in this input. The hash value of this UTXO is saved in a reverse order here.
+- Previous output index - The transaction may have more than one UTXO which are referenced by their index number. The first index is 0.
+- Unlocking Script Size - This is the size of the Unlocking Script in bytes.
+- Unlocking Script - This is the hash of the Unlocking Script that fulfills the conditions of the UTXO Locking Script.
+- Sequence Number - This is a deprecated feature of bitcoin, currently set to ffffffff by default.
+4. Output count - which tells us how many outputs were produced from this transaction.
 5. Output info - At a high level, it provides how many BTC outputted and conditions for future spending.
-6. Locktime - Earliest time or an earliest block a transaction can be added to the blockchain. If < 500 million, read as block height else if > 500 million, read as Unix timestamp
-
+- Amount - The amount of Bitcoin outputted in Satoshis (the smallest bitcoin unit). 10^8 Satoshis = 1 Bitcoin.
+- Locking Script Size - This is the size of the Locking Script in bytes.
+- Locking Script - This is the hash of the Locking Script that specifies the conditions that must be met to spend this output.
+6. Locktime - The locktime field indicates the earliest time or the earliest block a transaction can be added to the blockchain. If the locktime is non-zero and less than 500 million, it is interpreted as a block height and miners have to wait until that block height is reached before attempting to add it to a block. If the locktime is above 500 million, it is read as a UNIX timestamp which means the number of seconds since the date January 1st 1970. It is usually 0 which means confirm as soon as possible.
 
 
 
