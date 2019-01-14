@@ -301,3 +301,6 @@ The second optional argument (may be null) is an array of previous transaction o
 **- Peer-to-peer network:** A network of computers that allows information to be shared across users.
 
 #### 9. Mining Commands
+1. getmininginfo: Returns an object that contains mining-related information.
+2. getblocktemplate: Returns data needed to construct a block.
+3. prioritisetransaction: Accepts the transaction into mined blocks at a higher or lower priority.
