@@ -23,6 +23,7 @@ Trying out some blockchain stuff
 - Hyperledger explorer - https://github.com/hyperledger/blockchain-explorer
 - Blockchain demo - https://github.com/anders94/blockchain-demo
 - Bitcoin Testnet block explorer - https://live.blockcypher.com/btc-testnet/
+- Block Verification - https://bitcoin-message-validation.firebaseapp.com/index.html
 
 ## Future Projects
 1. Blockchain Identity
