@@ -368,3 +368,11 @@ Some of the core ideas behind building a simple private blockchain are as follow
 5. Block Height and Timestamp
 6. Level DB to Persist Data
 
+First, lets discuss some key differences between public and private blockchain
+
+|   |  Public Blockchain | Private Blockchain |
+|---|---|---|
+| Permissions  | Permissionless | Permissioned |
+| Scalability  | More Difficult | Simpler |
+| Vulnerability   | Less Vulnerable | More Vulnerable |
+| Compliance   | More Difficult | Simpler |
