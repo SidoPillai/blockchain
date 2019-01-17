@@ -359,3 +359,12 @@ Breakdown of Raw Transaction:
 7. Query the TxID of the Transaction we sent <br>
 ```gettransaction - Query the TxID and view details. Similar to online block explorer```
 
+## To build a simple blockchain
+Some of the core ideas behind building a simple private blockchain are as follows:
+1. Block Data Model
+2. Create New Blocks
+3. Store Blocks
+4. Linking Blocks
+5. Block Height and Timestamp
+6. Level DB to Persist Data
+
