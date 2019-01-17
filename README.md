@@ -376,3 +376,5 @@ First, lets discuss some key differences between public and private blockchain
 | Scalability  | More Difficult | Simpler |
 | Vulnerability   | Less Vulnerable | More Vulnerable |
 | Compliance   | More Difficult | Simpler |
+
+Cross Chain Functionality: Allows a series of protocols that work in harmony to deliver decentralized applications
