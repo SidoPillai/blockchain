@@ -6,6 +6,7 @@ Trying out some blockchain stuff
 2. Block - https://github.com/siddeshpillai/blockchain/tree/block-exercise
 3. Bitcoin Message - https://github.com/siddeshpillai/blockchain/tree/bitcoin-message
 4. Block Explorer - https://github.com/siddeshpillai/blockchain/tree/block-explorer
+5. Create Simple Block Chain - https://github.com/siddeshpillai/blockchain/tree/simple-chain
 
 ## Good Reads
 1. How to timestamp digital document - https://www.anf.es/pdf/Haber_Stornetta.pdf
