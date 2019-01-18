@@ -27,6 +27,9 @@ Trying out some blockchain stuff
 - Bitcoin Testnet block explorer - https://live.blockcypher.com/btc-testnet/
 - Block Verification - https://bitcoin-message-validation.firebaseapp.com/index.html
 
+## Projects
+1. Create a Private Blockchain - https://github.com/siddeshpillai/blockchain/tree/private-blockchain
+
 ## Future Projects
 1. Blockchain Identity
 2. Blockchain data
