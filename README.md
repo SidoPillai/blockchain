@@ -388,3 +388,27 @@ First, lets discuss some key differences between public and private blockchain
 | Compliance   | More Difficult | Simpler |
 
 Cross Chain Functionality: Allows a series of protocols that work in harmony to deliver decentralized applications
+
+## Do You Really Need A Blockchain?
+Some things to consider before deciding on need for having blockchain in your app
+
+### Problem of Value Identification
+1. Is there a need to share information, credentials or value with others?
+2. Is trust a critical requirement to the process?
+3. Do you need to prove to others you are transacting/reporting accurately?
+4. Is there potential to monetize the data or digital asset in the value chain?
+5. Who owns the problem? Individual or industry wide challenges?
+
+### Stakeholders buy in
+1. Is there a network of stakeholders (i.e. more than 2)?
+2. Is there a dependency on others for information?
+3. Does more than one participant need to update the data?
+4. Is there scope to open up the ecosystem to ancillary parties in the future?
+5. Are you working with other industry players on any activities?
+
+### Technical considerations
+1. Is there any ongoing need or future requirements for high data throughput?
+2. Do you rely or use public data sources to make decisions?
+3. Do you need to store a particularly rich/complex data structure?
+4. Do you need to digitize assets in your value chain?
+5. Do you need transaction privacy? Do you need anonymity?
