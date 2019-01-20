@@ -13,6 +13,7 @@ Trying out some blockchain stuff
 1. How to timestamp digital document - https://www.anf.es/pdf/Haber_Stornetta.pdf
 2. Bitcoin: A peer to peer cash system - https://bitcoin.org/bitcoin.pdf 
 3. Genesis Block - https://en.bitcoin.it/wiki/Genesis_block
+4. The Complete Satoshi - https://satoshi.nakamotoinstitute.org/
 
 ## Resources
 - Bitcoin Stats - https://bitcoinvisuals.com/stats
