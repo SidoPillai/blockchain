@@ -18,6 +18,7 @@ Trying out some blockchain stuff
 ## Workshops
 1. https://blockchain.berkeley.edu/
 2. https://blockchain.berkeley.edu/workshops/
+3. Learn Solidity - https://www.youtube.com/channel/UCaWes1eWQ9TbzA695gl_PtA
 
 ## Resources
 - Bitcoin Stats - https://bitcoinvisuals.com/stats
