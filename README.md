@@ -15,6 +15,10 @@ Trying out some blockchain stuff
 3. Genesis Block - https://en.bitcoin.it/wiki/Genesis_block
 4. The Complete Satoshi - https://satoshi.nakamotoinstitute.org/
 
+## Workshops
+1. https://blockchain.berkeley.edu/
+2. https://blockchain.berkeley.edu/workshops/
+
 ## Resources
 - Bitcoin Stats - https://bitcoinvisuals.com/stats
 - Importing bitcoins via private keys - https://bitcoinelectrum.com/importing-your-private-keys-into-electrum/
