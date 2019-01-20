@@ -19,7 +19,7 @@ class Blockchain {
     // will not create the genesis block
     generateGenesisBlock() {
         this.getBlockHeight().then((height) => {
-            if (height == 0) {
+            if (height === -1) {
                 let genesisBlock = new Block.Block('First block in the chain - Genesis block');                
                 Promise.resolve(this.addBlock(genesisBlock)).then((result) => { 
                     console.log("Created Genesis Block ", result); 
@@ -37,7 +37,7 @@ class Blockchain {
         return new Promise ((resolve, reject) => {
             self.bd.getBlocksCount().
             then((count) => {
-                resolve(count);
+                resolve(count-1);
             }).catch((err) => { 
                 reject(err)
             });
@@ -120,30 +120,33 @@ class Blockchain {
         })
     }
 
-    validateCurrentBlock(height, totalNoOfBlocks) {        
-        return new Promise( (resolve,reject) => {                        
+    validateCurrentBlock(height, totalNoOfBlocks) {   
+
+        return new Promise((resolve,reject) => {                        
+            
             Promise.resolve(this.getBlock(height)).then((block) => {
                 var currentBlockHash = block.hash;
                 block.hash = "";
-                var SHAOfBlock = SHA256(JSON.stringify(block)).toString();                
+                var SHAOfBlock = SHA256(JSON.stringify(block)).toString();    
+
                 if (currentBlockHash === SHAOfBlock) {
                     // Skip the last block since next block is not available
-                    if (height+1 !== totalNoOfBlocks) {
+                    if (height !== totalNoOfBlocks) {
                         Promise.resolve(this.getBlock(height+1)).then((nextBlock) => {
                             var nextBlockPreviousBlockHash = nextBlock.previousBlockHash;
                             if (currentBlockHash !== nextBlockPreviousBlockHash) {
-                                reject('validateCurrentBlock() - Block is tampered at height ' + height);
+                                resolve(false);
                             } else {
                                 resolve(true);
                             }
                         }).catch((err) => {
-                            reject('validateCurrentBlock() - Block is tampered at height ' + height)
+                            resolve(false)
                         });
                     } else {
                         resolve(true);
                     }                    
                 } else {
-                    reject('validateCurrentBlock() - Block is tampered at height ' + height)
+                    resolve(false);
                 }
             }).catch((err) => { console.log(err); reject(err)});
         })    
@@ -155,7 +158,7 @@ class Blockchain {
             this.getBlockHeight().then((height) => {    
                 // Create an array of promises
                 var promises = [] 
-                for (var i = 0; i < height; i++) {
+                for (var i = 1; i <= height; i++) {
                     promises.push(Promise.resolve(this.validateCurrentBlock(i, height)))
                 }
                 // Get the results asynchronously
@@ -165,7 +168,7 @@ class Blockchain {
                     var res = []
                     for (var j = 0; j < result.length; j++) {
                         if (!result[j]) {
-                            res.push(result[j])
+                            res.push('Block ' + (j+1) + ' is defected')
                         }
                     }
                     resolve(res);
