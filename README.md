@@ -10,6 +10,7 @@ Trying out some blockchain stuff
 6. Private Blockchain - https://github.com/siddeshpillai/blockchain/tree/private-blockchain
 7. Express JS Block Exercise - https://github.com/siddeshpillai/blockchain/tree/express-js-exercise
 8. Hapi JS Block Exercise - https://github.com/siddeshpillai/blockchain/tree/hapi-js-exercise
+9. Webservices - https://github.com/siddeshpillai/blockchain/tree/blockchain-webservice
 
 ## Good Reads
 1. How to timestamp digital document - https://www.anf.es/pdf/Haber_Stornetta.pdf
