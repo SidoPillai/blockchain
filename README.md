@@ -72,7 +72,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Siddesh Pillai** - *Initial work* - [Siddesh Pillai](https://github.com/siddeshpillai)
+* [Siddesh Pillai](https://github.com/siddeshpillai)
 
 ## License
 
