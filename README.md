@@ -8,6 +8,7 @@ Trying out some blockchain stuff
 4. Block Explorer - https://github.com/siddeshpillai/blockchain/tree/block-explorer
 5. Create Simple Block Chain - https://github.com/siddeshpillai/blockchain/tree/simple-chain
 6. Private Blockchain - https://github.com/siddeshpillai/blockchain/tree/private-blockchain
+7. Express JS Exercise - https://github.com/siddeshpillai/blockchain/tree/express-js-exercise
 
 ## Good Reads
 1. How to timestamp digital document - https://www.anf.es/pdf/Haber_Stornetta.pdf
