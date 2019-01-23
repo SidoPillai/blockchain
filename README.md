@@ -1,5 +1,5 @@
 # blockchain
-Trying out some blockchain stuff
+Fundamentals of Blockchain. 
 
 ## Exercises
 1. Hashing - https://github.com/siddeshpillai/blockchain/tree/hashing-exercise
