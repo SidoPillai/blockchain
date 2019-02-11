@@ -36,6 +36,7 @@ Fundamentals of Blockchain.
 - Blockchain demo - https://github.com/anders94/blockchain-demo
 - Bitcoin Testnet block explorer - https://live.blockcypher.com/btc-testnet/
 - Block Verification - https://bitcoin-message-validation.firebaseapp.com/index.html
+- Udacity: Creating unique metadata with solidity - https://medium.com/@alexpanas/udacity-blockchain-nanodegree-creating-unique-metadata-with-solidity-daccded333ef
 
 ## Projects
 1. Create a Private Blockchain - https://github.com/siddeshpillai/blockchain/tree/private-blockchain
