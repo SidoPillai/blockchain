@@ -99,6 +99,13 @@ There is always a chance the Speaker, who is randomly selected from the Delegate
 Dishonest Delegate
 In this case, the chosen Speaker is honest but there are Dishonest Delegates in the system meaning even if they receive a proposal for new block that is faulty, they can say it is valid. If it is a minority of delegates that are dishonest, the block will not make it and new speaker is elected.
 
+### Proof of Existence 
+The concept that publicly proving and authenticating any digital asset on the blockchain by verifying its hash.
+- Helps you demonstrate data ownership without revealing actual data. This is useful for things like copyrighted material or patents.
+- Checks for the integrity of your digital asset. Any proof of existence will recognize your document FOREVER. Even the slightest difference will be recognized allowing you to be sure your asset hasn’t changed.
+- Provides document Time stamping. You can use this to prove certain information existed at a certain time.
+- Certifies the existence of the document without the need for a central authority.
+
 ## Wallets
 Blockchain identities are made up of a few important tools like wallets, addresses, and keys. Not only are there a few of these different tools creating our identity, it's also possible to implement them in different ways.
 
