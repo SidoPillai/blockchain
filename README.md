@@ -30,7 +30,7 @@ This will help you to test and validate endpoints.
 This project has 2 endpoints. I prefer using Postman for testing these endpoints. You may choose to use Curl
 
 
-1. GET - http://localhost:8000/block/{blockHeight}
+## 1. GET - http://localhost:8000/block/{blockHeight}
 
 blockHeight - integer value of a particular height
 
@@ -58,7 +58,7 @@ Expected Response
 Block not found at height blah
 ```
 
-2. POST - http://localhost:8000/block
+## 2. POST - http://localhost:8000/block
 
 set body as
 
