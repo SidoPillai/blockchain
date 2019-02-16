@@ -433,4 +433,5 @@ Some things to consider before deciding on need for having blockchain in your ap
 ### Ethereum Virtual Machine
 - A VM that executes code
 - A runtime for smart contracts
+
 Refer: http://ethdocs.org/en/latest/introduction/what-is-ethereum.html?highlight=EVM#ethereum-virtual-machine
