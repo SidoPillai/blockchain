@@ -1,5 +1,5 @@
 # blockchain
-Fundamentals of Blockchain. 
+Fundamentals of Blockchain and beyond. 
 
 ## Exercises
 1. Hashing - https://github.com/siddeshpillai/blockchain/tree/hashing-exercise
@@ -426,3 +426,6 @@ Some things to consider before deciding on need for having blockchain in your ap
 3. Do you need to store a particularly rich/complex data structure?
 4. Do you need to digitize assets in your value chain?
 5. Do you need transaction privacy? Do you need anonymity?
+
+
+# Ethereum 
