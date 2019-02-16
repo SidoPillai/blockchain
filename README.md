@@ -435,3 +435,13 @@ Some things to consider before deciding on need for having blockchain in your ap
 - A runtime for smart contracts
 
 Refer: http://ethdocs.org/en/latest/introduction/what-is-ethereum.html?highlight=EVM#ethereum-virtual-machine
+
+### Tools
+1. [Etherscan](https://etherscan.io/) - Etherscan is a Block Explorer and Analytics Platform for Ethereum, a decentralized smart contracts platform.
+2. [Metamask](https://metamask.io/) - MetaMask is a bridge that allows you to visit the distributed web of tomorrow in your browser today. It allows you to run Ethereum dApps right in your browser without running a full Ethereum node.
+3. [Remix](https://remix.ethereum.org/#optimize=false&version=soljson-v0.5.1+commit.c8a2cb62.js) - A browser based IDE that allows you to write Solidity and deploy solidity contracts.
+4. [web3js](https://web3js.readthedocs.io/en/1.0/) - A collection of libraries that allow you to interact with a local or remote Ethereum node.
+5. [Infura](https://infura.io/) - Gives you access to the Ethereum network without running your own local node.
+6. [Ganache](https://truffleframework.com/ganache) - Application for launching local Ethereum blockchain instances.
+7. [Truffle](https://truffleframework.com) - A development environment, testing framework, and asset pipeline meant to make your life easier as an Ethereum developer.
+8. [Geth](https://geth.ethereum.org/) - A golang implementation of the Ethereum blockchain used to set up a local full Ethereum node.
