@@ -23,7 +23,6 @@ class Blockchain {
             if (height === -1) {
                 let genesisBlock = new Block.Block('First block in the chain - Genesis block');                
                 Promise.resolve(this.addBlock(genesisBlock)).then((result) => { 
-                    // console.log("Created Genesis Block ", result); 
                 }).catch((err) => {
                     console.log('Error creating genesis block ', err)
                 });
@@ -58,7 +57,7 @@ class Blockchain {
             let previousBlock = await this.getBlock(height-1);
             block.previousBlockHash = previousBlock.hash;
             let result = Promise.resolve(this.addBlockToTheChain(height, block));
-            return Promise.resolve(result);    
+            return Promise.resolve(result);
         }
     }
 
@@ -69,6 +68,31 @@ class Blockchain {
             return Promise.resolve(JSON.parse(block));
         } else {
             return Promise.reject('Block not found at height ' + height);
+        }
+    }
+    // Get Block By Height
+    async getBlockByHeight(height) {
+        let block = await this.bd.getLevelDBData(height);
+        if (height == 0) {
+            if (typeof block !== 'undefined') {
+                return Promise.resolve(JSON.parse(block));
+            } else {
+                return Promise.reject('Error! Blockchain is not initialized.');
+            }    
+        } else {
+            if (typeof block !== 'undefined') {
+                let _block = JSON.parse(block);
+                let _body = _block.body
+                let _address = _body.address;
+                let _star = _body.star
+                _star.storyDecoded = hex2ascii(_star.story);
+                _body.star = _star;
+                _body.address = _address;
+                _block.body = _body;
+                return Promise.resolve(_block);
+            } else {
+                return Promise.reject('Block not found at height ' + height);
+            }
         }
     }
 
@@ -117,7 +141,7 @@ class Blockchain {
             }
         }        
         if (blocks.length > 0) {
-            return Promise.resolve(JSON.parse(JSON.stringify(blocks)));
+            return Promise.resolve(blocks);
         } else {
             return Promise.reject('Block not found with address ' + address);
         }
@@ -187,7 +211,7 @@ class Blockchain {
         return new Promise( (resolve, reject) => {
             self.bd.addLevelDBData(height, JSON.stringify(block).toString()).then((blockModified) => {
                 resolve(blockModified);
-            }).catch((err) => { console.log(err); reject(err)});
+            }).catch((err) => { reject(err)});
         });
     }
    

@@ -1,4 +1,4 @@
-const BlockClass = require('./Block.js');
+const Block = require('./Block.js');
 const BlockChain = require('./BlockChain.js');
 const bitcoinMessage = require('bitcoinjs-message');
 
@@ -21,9 +21,8 @@ class BlockController {
         this.app = app;
 
         // MEMPOOL CACHE
-        this.mempool = []
-        this.requestTimeStamp = [];
-        this.timeoutRequests = [];
+        this.mempoolDict = {} 
+        this.timeoutRequests = []       
         this.mempoolValid = []
 
         // POST REQUEST
@@ -42,11 +41,9 @@ class BlockController {
      * @param {*} walletAddress 
      */
     async addRequestValidation(walletAddress) {
-        if (!this.mempool.includes(walletAddress)) {
-            this.mempool.push(walletAddress);
-            this.timeoutRequests.push(walletAddress);
-            this.requestTimeStamp.push(new Date().getTime().toString().slice(0,-3));
-            this.setRequestTimeouts(walletAddress, this.mempool);
+        if (!this.mempoolDict[walletAddress]) {
+            this.mempoolDict[walletAddress] = new Date().getTime().toString().slice(0,-3);
+            this.setRequestTimeouts(walletAddress, this.mempoolDict);
         }
         return Promise.resolve(this.requestObject(walletAddress));
     }
@@ -58,12 +55,7 @@ class BlockController {
      */
     async setRequestTimeouts(walletAddress, mempool) {
         this.timeoutRequests[walletAddress] = setTimeout(() => {
-            let index = mempool.indexOf(walletAddress);
-            if (index > -1) {
-                mempool.splice(index,1);
-                this.requestTimeStamp.splice(index,1);
-                this.timeoutRequests.splice(index,1);    
-            }    
+            delete mempool[walletAddress];
         }, TimeoutRequestsWindowTime);
     }
 
@@ -72,12 +64,7 @@ class BlockController {
      * @param {*} walletAddress 
      */
     async removeValidationRequest(walletAddress) {
-        let index = this.mempool.indexOf(walletAddress);
-        if (index > -1) {
-            this.mempool.splice(index,1);
-            this.requestTimeStamp.splice(index,1);
-            this.timeoutRequests.splice(index,1);    
-        }
+        delete this.mempoolDict[walletAddress];
     }
 
     /**
@@ -87,9 +74,8 @@ class BlockController {
      * @param {*} walletAddress 
      */
     async requestObject(walletAddress) {
-        let index = this.mempool.indexOf(walletAddress);
-        if (index > -1) {
-            let reqTimeStamp = this.requestTimeStamp[index];
+        if (this.mempoolDict[walletAddress]) {
+            let reqTimeStamp = this.mempoolDict[walletAddress];
             let timeElapsed = (new Date().getTime().toString().slice(0,-3)) - reqTimeStamp;
             let timeRemaining = (TimeoutRequestsWindowTime/1000) - timeElapsed;
             var messageObject = new Object();
@@ -114,6 +100,7 @@ class BlockController {
                 let validedObject = this.mempoolValid[index];
                 if (validedObject.status.address === walletAddress) {
                     isValid = true;
+                    this.mempoolValid.splice(index,1);
                     break;
                 }
             }
@@ -132,9 +119,9 @@ class BlockController {
             if (Object.keys(req.body).length === 0) {
                 res.send("Invalid request! Please refer README.md for sending request")
             } else {
-                Promise.resolve(this.addRequestValidation(JSON.parse(JSON.stringify(req.body)).address.toString()))
+                Promise.resolve(this.addRequestValidation(req.body.address))
                 .then((data) => {
-                    res.send(data);
+                    res.send(JSON.parse(data));
                 })
                 .catch((err) => { 
                     res.send(err);
@@ -153,7 +140,7 @@ class BlockController {
                 res.send("Invalid request! Please refer README.md for sending request")
             } else {
                 Promise.resolve(this.processSignature(req.body)).then((block) => {
-                    res.send(block);
+                    res.send(JSON.parse(block));
                 }).catch((err) => {
                     res.send(err);
                 });
@@ -189,8 +176,10 @@ class BlockController {
                 var validObj = new Object();                    
                 validObj.registerStar = true;
                 validObj.status = JSON.parse(JSON.stringify(statusObj));                                        
-                this.mempoolValid.push(validObj)                    
-                if (isMessageVerified) this.removeValidationRequest(_address);
+                if (isMessageVerified) {
+                    this.mempoolValid.push(validObj);
+                    this.removeValidationRequest(_address);
+                }
                 return Promise.resolve(JSON.stringify(validObj));    
             } catch(err) {
                 return Promise.reject('Invalid signature length! Please refer README.md for sending request')
@@ -209,10 +198,10 @@ class BlockController {
             if (Object.keys(req.body).length === 0) {
                 res.send("Invalid request! Please refer README.md for sending request")
             } else {
-                let processBlock = Promise.resolve(this.processBlockPost(JSON.stringify(req.body)));
+                let processBlock = this.processBlockPost(JSON.stringify(req.body));
                 processBlock.then((block) => {
                     myBlockChain.addBlock(block).then((result) => {
-                        res.send(result);
+                        res.send(JSON.parse(result));
                     }).catch((err) =>{
                         res.send(err);
                     });
@@ -228,37 +217,36 @@ class BlockController {
      * @param {*} body 
      */
     async processBlockPost(body) {
-            let _body = JSON.parse(body)
-            let walletAddress = _body.address.toString();
-            let isValid = this.isAddressPreviouslyValidated(walletAddress);
-            if (isValid) {                    
-                let starData = JSON.parse(JSON.stringify(_body.star));                    
-                if (Object.prototype.toString.call(starData) === '[object Array]') {
-                    return Promise.reject('Invalid request! Only one Star can be send in the request');
-                } else {
-                    let _story = starData.story;                    
-                    if (_story.length > 500) {
-                        return Promise.reject('Invalid request! Star story supports ASCII text, limited to 250 words (500 bytes)');
-                    } else {
-                        let encodeStory = new Buffer.from(_story).toString('hex');
-                        starData.story = encodeStory;                    
-                        var obj = Object()
-                        obj.address = walletAddress;
-                        obj.star = starData
-                        let block = new BlockClass.Block(obj);
-                        return Promise.resolve(block);
-                    }
-                }
-            } else {
-                return Promise.reject('Not a valid address ' + walletAddress);
-            } 
+        let _body = JSON.parse(body)
+        let starData = _body.star;
+        let _story = starData.story;
+        if (!starData.ra || !starData.dec || !_story) {
+            return Promise.reject('Invalid request! ra, dec, story cannot be empty');
+        }
+        let walletAddress = _body.address;
+        let isValid = this.isAddressPreviouslyValidated(walletAddress);
+        if (isValid) {                                
+            if (_story.length > 500) {
+                return Promise.reject('Invalid request! Star story supports ASCII text, limited to 250 words (500 bytes)');                
+            } else {                
+                starData.story = Buffer.from(_story, 'utf8').toString('hex');                    
+                var obj = Object()
+                obj.address = walletAddress;
+                obj.star = starData
+                let block = new Block(obj);
+                return Promise.resolve(block);
+            }                
+        } else {
+            return Promise.reject('Not a valid address ' + walletAddress);
+        } 
     }
+
     /**
      * Web API GET endpoint to get a star block by hash in the blockchain with JSON response
      * http://localhost:8000/stars/hash:[HASH]
      */
     async getBlockByHash() {
-        this.app.get("/stars/hash:hash", (req, res) => {
+        this.app.get("/stars/hash::hash", (req, res) => {
             try {
                 let paramaters = JSON.parse(JSON.stringify(req.params));
                 myBlockChain.getBlockByHash(paramaters.hash.toString()).then((block) => {
@@ -277,7 +265,7 @@ class BlockController {
      * http://localhost:8000/stars/address:[ADDRESS]
      */
     async getBlockByAddress() {
-        this.app.get("/stars/address:address", (req, res) => {
+        this.app.get("/stars/address::address", (req, res) => {
             let paramaters = JSON.parse(JSON.stringify(req.params));
             myBlockChain.getBlockByAddress(paramaters.address).then((block) => {
                 res.send(block);
@@ -294,7 +282,7 @@ class BlockController {
     async getBlockByHeight() {
         this.app.get("/block/:index", (req, res) => {
             let paramaters = JSON.parse(JSON.stringify(req.params));
-            myBlockChain.getBlock(paramaters.index).then((block) => {
+            myBlockChain.getBlockByHeight(paramaters.index).then((block) => {
                 res.send(block);
             }).catch((err) => {
                 res.send(err);

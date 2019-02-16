@@ -119,7 +119,7 @@ Retrieve the block by hash.
 For e.g. to retrieve the above block 
 GET 
 ```
-http://localhost:8000/stars/hashaa289a05c9fd1f90a772a8e414c8b955182e14d00ec21ee6ac246bd77f21f462
+http://localhost:8000/stars/hash:aa289a05c9fd1f90a772a8e414c8b955182e14d00ec21ee6ac246bd77f21f462
 ```
 
 Expected response:
@@ -149,7 +149,7 @@ For e.g. to retrieve the above block
 
 GET
 ```
-http://localhost:8000/stars/address136o12dADFQ3f6Tbb96d5o35NJiUZ7AuAo
+http://localhost:8000/stars/address:136o12dADFQ3f6Tbb96d5o35NJiUZ7AuAo
 ```
 
 Expected response:
