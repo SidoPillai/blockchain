@@ -41,6 +41,7 @@ Fundamentals of Blockchain.
 ## Projects
 1. Create a Private Blockchain - https://github.com/siddeshpillai/blockchain/tree/private-blockchain
 2. Create a Block Chain WebService - https://github.com/siddeshpillai/blockchain/tree/blockchain-webservice
+3. Create a Block Chain Notary Service
 
 ## Future Projects
 1. Blockchain Identity
