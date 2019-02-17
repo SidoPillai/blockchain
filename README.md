@@ -445,3 +445,6 @@ Refer: http://ethdocs.org/en/latest/introduction/what-is-ethereum.html?highlight
 6. [Ganache](https://truffleframework.com/ganache) - Application for launching local Ethereum blockchain instances.
 7. [Truffle](https://truffleframework.com) - A development environment, testing framework, and asset pipeline meant to make your life easier as an Ethereum developer.
 8. [Geth](https://geth.ethereum.org/) - A golang implementation of the Ethereum blockchain used to set up a local full Ethereum node.
+
+### Community
+1. https://forum.ethereum.org/categories/ethereum-js
