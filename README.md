@@ -436,6 +436,18 @@ Some things to consider before deciding on need for having blockchain in your ap
 
 Refer: http://ethdocs.org/en/latest/introduction/what-is-ethereum.html?highlight=EVM#ethereum-virtual-machine
 
+## Acoounts
+1. Externally owned accounts (EOA)
+- Tied to private key
+- Doesn't hold code
+- Maintains ether balance
+- Can send transactions
+
+2. Certificate accounts (CA)
+- Has code
+- Maintains ether balance
+- Executes code when triggered by transaction or messages
+
 ### Tools
 1. [Etherscan](https://etherscan.io/) - Etherscan is a Block Explorer and Analytics Platform for Ethereum, a decentralized smart contracts platform.
 2. [Metamask](https://metamask.io/) - MetaMask is a bridge that allows you to visit the distributed web of tomorrow in your browser today. It allows you to run Ethereum dApps right in your browser without running a full Ethereum node.
