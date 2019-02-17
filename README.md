@@ -436,17 +436,29 @@ Some things to consider before deciding on need for having blockchain in your ap
 
 Refer: http://ethdocs.org/en/latest/introduction/what-is-ethereum.html?highlight=EVM#ethereum-virtual-machine
 
-## Acoounts
-1. Externally owned accounts (EOA)
+## Ethereum Acoounts
+
+### Externally owned accounts (EOA)
 - Tied to private key
 - Doesn't hold code
 - Maintains ether balance
 - Can send transactions
+- Call smart contracts
+- Transfer balance between accounts
 
-2. Certificate accounts (CA)
+### Certificate accounts (CA)
 - Has code
 - Maintains ether balance
 - Executes code when triggered by transaction or messages
+- Manipulate storage
+
+#### Account State Variables
+- Nonce : number of transactions on the account 
+EOA - # transanction send to account address
+CA - # of smart contracts initiated by an account
+- Account balance : Total value of ether in wei 
+- Storage hash : Root node of particia tree contains the contents in the account
+- Code hash : execute calls made to the account
 
 ### Tools
 1. [Etherscan](https://etherscan.io/) - Etherscan is a Block Explorer and Analytics Platform for Ethereum, a decentralized smart contracts platform.
