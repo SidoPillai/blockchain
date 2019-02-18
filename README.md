@@ -11,6 +11,7 @@ Fundamentals of Blockchain and beyond.
 7. Express JS Block Exercise - https://github.com/siddeshpillai/blockchain/tree/express-js-exercise
 8. Hapi JS Block Exercise - https://github.com/siddeshpillai/blockchain/tree/hapi-js-exercise
 9. Webservices - https://github.com/siddeshpillai/blockchain/tree/blockchain-webservice
+10. DAPP Secret Messenger - https://github.com/siddeshpillai/blockchain/tree/dapp-secret-messenger
 
 ## Good Reads
 1. How to timestamp digital document - https://www.anf.es/pdf/Haber_Stornetta.pdf
