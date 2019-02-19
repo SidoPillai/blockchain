@@ -73,7 +73,8 @@
         console.log(myMessage);
 
         $("#setMessageButton").click(function () {
-            myMessage.setMessage($("#userInput").val());
+            message = $("#userInput").val()
+            myMessage.setMessage(message, (error, result) => {message = result});
             console.log($("#userInput").val())
         });
         
