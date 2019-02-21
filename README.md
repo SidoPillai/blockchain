@@ -461,6 +461,14 @@ CA - # of smart contracts initiated by an account
 - Storage hash : Root node of particia tree contains the contents in the account
 - Code hash : execute calls made to the account
 
+## Smart Contracts
+
+### Smart Contract Life Cycle
+1. Develop - Write the contract and compile.
+2. Deploy - Once deployed, the smart contract is un-editable. After deploying on any network (e.g. mainnet, testnet), you get an address specific to where contract was deployed.
+3. Invoke - Use the address created after the smart contract is deployed to invoke contract to call functions on it.
+4. Destroy - Once a contract has finished its purpose, it is important to destroy it so no one can call functions on it anymore. Remember that smart contracts cannot be edited once deployed. Also, often smart contracts are tied to funds, so keeping it around if it is no longer used puts these funds at risk.
+
 ### Tools
 1. [Etherscan](https://etherscan.io/) - Etherscan is a Block Explorer and Analytics Platform for Ethereum, a decentralized smart contracts platform.
 2. [Metamask](https://metamask.io/) - MetaMask is a bridge that allows you to visit the distributed web of tomorrow in your browser today. It allows you to run Ethereum dApps right in your browser without running a full Ethereum node.
