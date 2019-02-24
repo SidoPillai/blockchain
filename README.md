@@ -44,3 +44,6 @@ change _balance from private to internal and same goes with _totalSupply
 2. Run the command `truffle develop` (to run a local ethereum network)
 3. Use the command `compile` (to compile your solidity contract files)
 4. Use the command `migrate --reset` (to deploy your contract to the locally running ethereum network)
+
+## Steps to deploy the contract on rinkeby network
+Use the command `migrate --reset --network rinkeby`
