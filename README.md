@@ -12,6 +12,7 @@ Fundamentals of Blockchain and beyond.
 8. Hapi JS Block Exercise - https://github.com/siddeshpillai/blockchain/tree/hapi-js-exercise
 9. Webservices - https://github.com/siddeshpillai/blockchain/tree/blockchain-webservice
 10. DAPP Secret Messenger - https://github.com/siddeshpillai/blockchain/tree/dapp-secret-messenger
+11. Create and deploy an ERC20 token in local network - https://github.com/siddeshpillai/blockchain/tree/erc20tokens
 
 ## Good Reads
 1. How to timestamp digital document - https://www.anf.es/pdf/Haber_Stornetta.pdf
