@@ -479,6 +479,11 @@ CA - # of smart contracts initiated by an account
 7. [Truffle](https://truffleframework.com) - A development environment, testing framework, and asset pipeline meant to make your life easier as an Ethereum developer.
 8. [Geth](https://geth.ethereum.org/) - A golang implementation of the Ethereum blockchain used to set up a local full Ethereum node.
 
+## Tokens
+The idea that Ethereum not only has its own currency (Ether) but also has tokens on top of that which can act as currency themselves.
+
+good read - https://blockgeeks.com/guides/ethereum-token/
+
 ### Bullish
 1. [Rinkeby](https://faucet.rinkeby.io/) - Send test coins
 2. [Rinkeby.io](https://www.rinkeby.io/#stats) - Rinkeby Live Stats
