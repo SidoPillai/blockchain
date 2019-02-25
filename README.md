@@ -481,6 +481,11 @@ CA - # of smart contracts initiated by an account
 7. [Truffle](https://truffleframework.com) - A development environment, testing framework, and asset pipeline meant to make your life easier as an Ethereum developer.
 8. [Geth](https://geth.ethereum.org/) - A golang implementation of the Ethereum blockchain used to set up a local full Ethereum node.
 
+## Solidity 
+Solidity is an object-oriented, high-level language for implementing smart contracts. Smart contracts are programs which govern the behaviour of accounts within the Ethereum state.
+API Reference: https://solidity.readthedocs.io/en/v0.5.4/ 
+Use remix to write smart contracts on browser - https://remix.ethereum.org
+
 ## Tokens
 The idea that Ethereum not only has its own currency (Ether) but also has tokens on top of that which can act as currency themselves.
 
