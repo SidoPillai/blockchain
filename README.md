@@ -489,7 +489,8 @@ good read - https://blockgeeks.com/guides/ethereum-token/
 1. `truffle develop`- to run Truffle Development environment.
 2. `compile` - to compile any changes in the Smart Contract.
 3. `migrate` or `migrate --reset` - to migrate and create a fresh and clean Smart contract session.
-4. `test` - to run the test cases.
+4. `migrate --reset --network rinkeby` - to deploy in rinkeby network
+5. `test` - to run the test cases.
 
 ### Bullish
 1. [Rinkeby](https://faucet.rinkeby.io/) - Send test coins
