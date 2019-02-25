@@ -13,6 +13,7 @@ Fundamentals of Blockchain and beyond.
 9. Webservices - https://github.com/siddeshpillai/blockchain/tree/blockchain-webservice
 10. DAPP Secret Messenger - https://github.com/siddeshpillai/blockchain/tree/dapp-secret-messenger
 11. Create and deploy an ERC20 token in local & rinkeby network - https://github.com/siddeshpillai/blockchain/tree/erc20tokens
+12. Create ERC20 tokens using Webpack - https://github.com/siddeshpillai/blockchain/tree/ERC20-tokens-webpack
 
 ## Good Reads
 1. How to timestamp digital document - https://www.anf.es/pdf/Haber_Stornetta.pdf
