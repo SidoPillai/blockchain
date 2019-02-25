@@ -485,6 +485,12 @@ The idea that Ethereum not only has its own currency (Ether) but also has tokens
 
 good read - https://blockgeeks.com/guides/ethereum-token/
 
+### Truffle commands
+1. `truffle develop`- to run Truffle Development environment.
+2. `compile` - to compile any changes in the Smart Contract.
+3. `migrate` or `migrate --reset` - to migrate and create a fresh and clean Smart contract session.
+4. `test` - to run the test cases.
+
 ### Bullish
 1. [Rinkeby](https://faucet.rinkeby.io/) - Send test coins
 2. [Rinkeby.io](https://www.rinkeby.io/#stats) - Rinkeby Live Stats
