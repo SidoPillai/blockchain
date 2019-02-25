@@ -1,6 +1,8 @@
 # blockchain
 Fundamentals of Blockchain and beyond. 
 
+ULTIMATE RESOURCES - http://www.dappuniversity.com/articles/the-complete-blockchain-developer-resource-list
+
 ## Exercises
 1. Hashing - https://github.com/siddeshpillai/blockchain/tree/hashing-exercise
 2. Block - https://github.com/siddeshpillai/blockchain/tree/block-exercise
