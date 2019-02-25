@@ -485,6 +485,7 @@ CA - # of smart contracts initiated by an account
 Solidity is an object-oriented, high-level language for implementing smart contracts. Smart contracts are programs which govern the behaviour of accounts within the Ethereum state.
 API Reference: https://solidity.readthedocs.io/en/v0.5.4/ 
 Use remix to write smart contracts on browser - https://remix.ethereum.org
+Video tutorial to get started with Solidity - https://www.youtube.com/playlist?list=PLS5SEs8ZftgUq-aMMYeKf8nPqHrNqa3Iu
 
 ## Tokens
 The idea that Ethereum not only has its own currency (Ether) but also has tokens on top of that which can act as currency themselves.
