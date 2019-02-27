@@ -9,12 +9,11 @@
 
 ## Running the project
 1. Clone the repository
-2. Checkout `CryptoStar-DAPP-Ethereum ` branch
-3. Open 2 terminal window from the project one to deploy the contract and other to run the webserver
-4. Enter the following command in the first terminal:
+2. Open 2 terminal window from the project one to deploy the contract and other to run the webserver
+3. Enter the following command in the first terminal:
    - `truffle develop` (to run a local ethereum network)
    - `compile` (to compile your solidity contract files)
    - `migrate --reset --network rinkeby` (to deploy your contract to the rinkeby ethereum network)
-5. Enter the following command in the second terminal:
+4. Enter the following command in the second terminal:
    - `cd app`
    - `npm run dev` 
