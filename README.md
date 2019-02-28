@@ -48,6 +48,7 @@ ULTIMATE RESOURCES - http://www.dappuniversity.com/articles/the-complete-blockch
 1. Create a Private Blockchain - https://github.com/siddeshpillai/blockchain/tree/private-blockchain
 2. Create a Block Chain WebService - https://github.com/siddeshpillai/blockchain/tree/blockchain-webservice
 3. Create a Block Chain Notary Service - https://github.com/siddeshpillai/blockchain/tree/blockchain-notary-service
+4. Create a CryptoStar DAPP using Ethereum - https://github.com/siddeshpillai/blockchain/tree/CryptoStar-DAPP-Ethereum
 
 ## Future Projects
 1. Blockchain Identity
